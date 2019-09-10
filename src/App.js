@@ -28,7 +28,7 @@ function App() {
     <div className="container">
       <Logo />
       <div className="displayData">
-        <span></span>
+        <span>0</span>
       </div>
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
