@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators";
 import Specials from "./components/ButtonComponents/SpecialButtons/Specials";
+
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
 
@@ -17,26 +18,36 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
   
-  // const [data, setData] = useState(0)
+  const [data, setData] = useState(0)
 
-  // const addition = () => {
-  //   setData(data)
-  // }
+  const inputDigit = e => {
+    setData(e)
+  }
+
+  const inputOperator = e => {
+    setData(e)
+  }
+
+  const inputSpecial = e => {
+    setData(e)
+  }
+
+
 
 
   return (
     <div className="container">
       <Logo />
       <div className="displayData">
-        <span>0</span>
+        <span>{data}</span>
       </div>
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <div classname="nsCon">
-          <Specials />
-          <Numbers />
+        <div className="nsCon">
+          <Specials inputSpecial={inputSpecial}/>
+          <Numbers inputDigit={inputDigit}/>
         </div>
-        <Operators />
+        <Operators inputOperator={inputOperator}/>
         
       </div>
     </div>
