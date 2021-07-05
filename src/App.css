@@ -1,3 +1,8 @@
+
+*{
+    
+}
+
 .container {
     background-color: #c00025;
     width: 100%;
@@ -6,6 +11,7 @@
     border: 2px solid grey;
     padding-bottom: 25px;
 }
+
 .display {
     margin-top: 25px;
     height: 100px;
@@ -20,3 +26,64 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+
+.displayData {
+    background: grey;
+    width: 80%;
+    margin: 0 auto 5% auto;
+    text-align: end;
+    border-radius: 25px;
+    font-size: 5rem;
+}
+
+.displayData span {
+    padding: 0 5% 0 0;
+}
+
+.App {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid white;
+}
+
+.Specials {
+    width: 100%;
+    margin: auto;
+
+}
+
+.Specials button {
+    background-color: blue;
+    margin: 1rem;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.Numbers {
+    width: 100%;
+    margin: auto;
+}
+
+.Numbers button {
+    background-color: #0366d6;
+    margin: 1rem;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.Operators {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 0 5% 0 0;
+}
+
+.Operators button {
+    background-color: aqua;
+    margin: 1rem;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
